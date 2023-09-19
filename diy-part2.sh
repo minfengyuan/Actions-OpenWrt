@@ -22,7 +22,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Ma
 cd ..
 wget https://github.com/vernesong/OpenClash/archive/master.zip
 unzip master.zip
-cp -r OpenClash-master/luci-app-openclash ./lede/package/lean/
+cp -r OpenClash-master/luci-app-openclash openwrt/package/lean/
 cd openwrt
 
 # Add adguardhome
