@@ -17,3 +17,13 @@
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/downloads/luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
+
+# Add openclash
+cd ..
+wget https://github.com/vernesong/OpenClash/archive/master.zip
+unzip master.zip
+cp -r OpenClash-master/luci-app-openclash ./lede/package/lean/
+cd lede
+
+# Add adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
