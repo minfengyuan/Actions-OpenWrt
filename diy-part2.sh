@@ -23,7 +23,7 @@ cd ..
 wget https://github.com/vernesong/OpenClash/archive/master.zip
 unzip master.zip
 cp -r OpenClash-master/luci-app-openclash ./lede/package/lean/
-cd lede
+cd openwrt
 
 # Add adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
